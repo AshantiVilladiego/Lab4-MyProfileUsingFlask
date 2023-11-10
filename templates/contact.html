@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=EB+Garamond:ital@1&family=Erica+One&family=Inter:wght@900&family=Molle&family=Sora:wght@800&family=Space+Grotesk:wght@700&family=Yellowtail&display=swap');
+        
+        body {
+            text-align: center;
+            background-image: url('{{url_for('static', filename = 'contact.jpg') }}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Erica One';
+            font-style: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: ghostwhite;
+            text-shadow: 2px 2px 0px black;
+            transform: scale(1.5, 2);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .rectangle {
+            width: 900px;
+            height: 340px;
+            background-color:aliceblue;
+            border-color:teal;
+            border-style: ridge;
+            border-width: 10px;
+            margin-bottom: 50px;
+            padding-inline: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        p {
+            color: #945378;
+            font-family: 'Eb Garamond';
+            font-size: xx-large;
+            font-style: italic;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            padding-left: 50px;
+
+            letter-spacing: normal;
+            margin: 0;
+            text-align: center;
+
+        }
+
+        .details {
+            color: darkgreen;
+            font-style: normal;
+            font-size: x-large;
+            text-align: left;
+            margin: 0;
+        }
+        button1 {
+            background-color:greenyellow;
+            color:black;
+            border: none;
+            padding: 7px 90px;
+            margin-bottom: 10px;
+
+            font-size: 22px;
+            font-family: 'EB Garamond';
+            cursor: cursor;
+            border-radius: 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            margin-top: 20px;
+            width: 100%;
+            background-color: transparent; 
+            position: absolute;
+            top: 0;
+    }
+    
+
+        nav li {
+            list-style: none;
+            margin: 0 15px;
+            
+        }
+
+        nav li button {
+            padding: 10px 20px;
+            background-color: aliceblue;
+            color: black;
+            font-family: 'Space Grotesk';
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        
+        }
+
+        nav li button:hover {
+            background-color: greenyellow
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Contact Page<br></h1>
+
+    <div class="rectangle">
+        <p>Dial the digital hotline!</p>
+        <p class="details">
+            Email: aaashantilouise@gmail.com<br>
+            Phone: 0912 676 3917<br>
+            Home Address: 365 Notanggi St. Kalawaan, Binangonan, Rizal 1940<br><br>
+    
+<button1><a href="https://www.facebook.com/ashantivilladiego" target="_blank">Facebook</a></button1><br>
+<button1><a href="https://www.linkedin.com/in/ashanti-louise-villadiego-a1a4a7298/" target="_blank">Linkedin</a></button1></br>
+        </p>
+    </div>
+     <nav>
+        <li><button onclick="window.location.href='/'">HOME PAGE</button></li>
+        <li><button onclick="window.location.href='/profile'">PROFILE</button></li>
+        <li><button onclick="window.location.href='/progworks'">MY PROGRAMMING WORKS</button></li>
+    </nav>
+
+
+</body>
+</html>
+
