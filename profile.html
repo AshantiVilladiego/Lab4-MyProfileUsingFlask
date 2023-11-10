@@ -1,0 +1,154 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=EB+Garamond:ital@1&family=Erica+One&family=Inter:wght@900&family=Molle&family=Sora:wght@800&family=Space+Grotesk:wght@700&family=Yellowtail&display=swap');
+
+        body {
+            text-align: center;
+            background-image: url('{{url_for('static', filename = 'prof_bg.jpg') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Erica One';
+            font-style: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #945378;
+            text-shadow: 2px 2px 0px #612B60;
+            transform: scale(1.5, 2);
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 60px;
+            
+        }
+
+        .rectangle {
+            width: 900px;
+            height: 500px;
+            background-color: #E5CEE2;
+            background-image: url('{{url_for('static', filename = 'rec_img_1_profile.gif') }}');
+            border-style: dotted;
+            border-color: #E8818A;
+            border-width: 10px;
+            margin-bottom: 90px;
+            margin-top: 20px;
+            padding-inline: 10px;
+            padding-top: 20px
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: space-around; 
+        }
+
+        .profile-pic {
+            border-radius: 90%;
+            width: 150px;
+            height: 150px;
+            object-fit: fill;
+            margin-bottom: 20px; 
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        p {
+            color: #945378;
+            font-family: 'Eb Garamond';
+            font-size: 50px;
+            font-style: italic;
+            letter-spacing: normal;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .details {
+            color: firebrick;
+            font-style: normal;
+            font-size: x-large;
+            text-align: center; 
+            margin: 0;
+        }
+
+        .motto {
+            color: #945378;
+            font-family: 'Eb Garamond';
+            font-size: 40px;
+            font-style: italic;
+            letter-spacing: normal;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            margin-top: 20px;
+            width: 100%;
+            background-color: transparent; 
+            position: absolute;
+            top: 0;
+    }
+    
+
+        nav li {
+            list-style: none;
+            margin: 0 15px;
+            
+        }
+
+        nav li button {
+            padding: 10px 20px;
+            background-color:violet;
+            color: black;
+            font-family: 'Space Grotesk';
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom:  20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        
+        }
+
+        nav li button:hover {
+            background-color: hotpink
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is Ashanti!<br></h1>
+
+    <div class="rectangle">
+        <img src="{{url_for('static', filename = 'prof_pic.jpg') }}" alt="Profile Picture" class="profile-pic">
+        <div class="text-container">
+            <p>All About me:</p>
+            <p class="details">
+                Name: Ashanti Louise B. Villadiego<br>
+                Course: Bachelor of Science in Computer Engineering<br>
+                Section: 2-6<br>
+                Subject: Data Structures and Algorithms
+            </p>
+            <p class="motto">
+                The world is your oyster
+            </p>
+        </div>
+    </div>
+    <nav>
+        <li><button onclick="window.location.href='/'">HOME PAGE</button></li>
+        <li><button onclick="window.location.href='/contact'">CONTACTS</button></li>
+        <li><button onclick="window.location.href='/progworks'">MY PROGRAMMING WORKS</button></li>
+    </nav>
+</body>
+</html>
